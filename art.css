@@ -1,0 +1,187 @@
+a{
+    background-size: 100%;
+}
+
+body > div{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    font-family: Arial;
+    background: darkolivegreen;
+    text-align: center;
+}
+
+footer{
+    background-color: darkolivegreen;
+    text-align: center;
+    font-family: Arial;
+}
+
+figure{
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    margin: 60px auto;
+    -webkit-perspective: 1000px;
+    -webkit-perspective-origin: 50% -25%;
+}
+
+.galery{
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(-540px);
+    position: relative;
+    margin: 0;
+    width: 500px;
+    height: 300px;
+    -webkit-transition: 1s;
+}
+
+.galery img{
+    position: absolute;
+    border: 15px solid rgba(0, 0, 0, .8);
+    opacity: .5;
+    -webkit-transition: 1s;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+}
+
+.galery img:nth-child(1){
+    -webkit-transform: translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(2){
+    -webkit-transform: rotateY(45deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(3){
+    -webkit-transform: rotateY(90deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(4){
+    -webkit-transform: rotateY(135deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(5){
+    -webkit-transform: rotateY(180deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(6){
+    -webkit-transform: rotateY(225deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(7){
+    -webkit-transform: rotateY(270deg) translateZ(540px) scale(.8);
+}
+
+.galery img:nth-child(8){
+    -webkit-transform: rotateY(315deg) translateZ(540px) scale(.8);
+}
+
+label{
+    cursor: pointer;
+    background: #eee;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    padding-top: 7px;
+    height: 23px;
+    font: .9em Arial;
+}
+
+label:hover{
+    background: #ddd;
+}
+
+input{
+    position: absolute;
+    left: -9999px;
+}
+
+input:checked + label{
+    font-weight: bold;
+    background: #ddd;
+}
+
+input[value="1"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px);
+}
+
+input[value="2"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-45deg);
+}
+
+input[value="3"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-90deg);
+}
+
+input[value="4"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-135deg);
+}
+
+input[value="5"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-180deg);
+}
+
+input[value="6"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-225deg);
+}
+
+input[value="7"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-270deg);
+}
+
+input[value="8"]:checked ~ .container .galery{
+    -webkit-transform: translateZ(-540px) rotateY(-315deg);
+}
+
+input[value="1"]:checked ~ .container .galery img:nth-child(1){
+    -webkit-transform: translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="2"]:checked ~ .container .galery img:nth-child(2){
+    -webkit-transform: rotateY(45deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="3"]:checked ~ .container .galery img:nth-child(3){
+    -webkit-transform: rotateY(90deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="4"]:checked ~ .container .galery img:nth-child(4){
+    -webkit-transform: rotateY(135deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="5"]:checked ~ .container .galery img:nth-child(5){
+    -webkit-transform: rotateY(180deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="6"]:checked ~ .container .galery img:nth-child(6){
+    -webkit-transform: rotateY(225deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="7"]:checked ~ .container .galery img:nth-child(7){
+    -webkit-transform: rotateY(270deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
+
+input[value="8"]:checked ~ .container .galery img:nth-child(8) {
+    -webkit-transform: rotateY(315deg) translateZ(540px) scale(1);
+    opacity: 1;
+}
