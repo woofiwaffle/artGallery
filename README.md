@@ -3,10 +3,11 @@
 </p>
 
 
-##About
+## About
 
 Interactive ART Gallery of 8 paintings.
+Click on buttons and watch.
 
-##Developer
+## Developer
 
 * [woofiwaffle](https://github.com/woofiwaffle)
