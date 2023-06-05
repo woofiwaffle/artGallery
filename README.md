@@ -13,7 +13,3 @@
 
 Interactive ART Gallery of 8 paintings.
 Click on buttons and watch.
-
-## Developer
-
-* [woofiwaffle](https://github.com/woofiwaffle)
